@@ -1,4 +1,6 @@
 mod first_word;
+mod try_enums;
+mod try_match;
 mod try_struct;
 
 fn main() {
