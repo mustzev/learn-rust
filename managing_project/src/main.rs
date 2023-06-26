@@ -1,7 +1,7 @@
-use restaurant::tests;
+use restaurant::eat_at_restaurant;
 
 fn main() {
     println!("Hello, world!");
 
-    // add();
+    eat_at_restaurant();
 }
