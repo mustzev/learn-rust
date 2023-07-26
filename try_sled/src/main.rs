@@ -1,7 +1,10 @@
-use crate::sled::{basic, merge_operator};
-use crate::sled_structured::upsert;
+use crate::{
+    sled::{basic, merge_operator},
+    sled_structured::upsert,
+};
 
 mod sled;
+mod sled_structured;
 
 fn main() {
     println!("Try sled!");
