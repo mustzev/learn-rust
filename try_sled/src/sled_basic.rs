@@ -1,4 +1,4 @@
-use sled::{Config, Result};
+use sled::{CompareAndSwapError, Config, Result};
 
 pub fn basic() -> Result<()> {
     let config = Config::new().path("db");
@@ -16,7 +16,7 @@ pub fn basic() -> Result<()> {
     // compare and swap
     match db.compare_and_swap(k.clone(), Some(&v1), Some(v2.clone()))? {
         Ok(()) => println!("It worked!"),
-        Err(sled::CompareAndSwapError {
+        Err(CompareAndSwapError {
             current: cur,
             proposed: _,
         }) => {
