@@ -4,9 +4,10 @@
 
 use {
     byteorder::{BigEndian, LittleEndian},
+    sled::Result,
     zerocopy::{byteorder::U64, AsBytes, FromBytes, LayoutVerified, Unaligned, U16, U32},
 };
 
-pub fn upsert() {
-    println!("upsert");
+pub fn upsert(db: &sled::Db) -> Result<()> {
+    Ok(())
 }

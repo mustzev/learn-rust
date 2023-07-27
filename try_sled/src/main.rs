@@ -1,14 +1,18 @@
-use crate::{
-    sled::{basic, merge_operator},
-    sled_structured::upsert,
-};
+use crate::sled_basic::{basic, merge_operator};
+use crate::sled_structured::upsert;
+use sled::{open, Result};
 
-mod sled;
+mod sled_basic;
 mod sled_structured;
 
-fn main() {
+fn main() -> Result<()> {
     println!("Try sled!");
+
     let _ = basic();
     let _ = merge_operator();
-    upsert();
+
+    let db = open("db")?;
+    upsert(&db)?;
+
+    Ok(())
 }
