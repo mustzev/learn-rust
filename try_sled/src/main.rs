@@ -1,5 +1,5 @@
 use crate::sled_basic::{basic, merge_operator};
-use crate::sled_structured::upsert;
+use crate::sled_structured::{hash_join, upsert, variable_lengths};
 
 use sled::{open, Result};
 
@@ -14,6 +14,8 @@ fn main() -> Result<()> {
 
     let db = open("db")?;
     upsert(&db)?;
+    variable_lengths(&db)?;
+    hash_join(&db)?;
 
     Ok(())
 }
