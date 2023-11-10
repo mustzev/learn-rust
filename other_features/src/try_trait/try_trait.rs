@@ -19,7 +19,7 @@ impl Summary for Tweet {
     }
 }
 
-pub fn createTweetAndNotify() {
+pub fn create_tweet_and_notify() {
     let tweet = Tweet {
         username: String::from("horse_ebooks"),
         content: String::from("of course, as you probably already know, people"),
