@@ -1,1 +1,1 @@
-mod pointer;
+pub mod pointer;
