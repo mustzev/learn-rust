@@ -18,15 +18,18 @@ pub async fn calculate(
     let a = payload.a;
     let b = payload.b;
 
-    let mut result;
+    let mut result: Option<f64> = None;
 
     match operation {
-        add => result = a + b,
-        subtract => result = a - b,
-        multiply => result = a * b,
-        divide => result = a / b,
-        _ => Err(StatusCode::BAD_REQUEST),
-    }
+        add => result = Some(a + b),
+        subtract => result = Some(a - b),
+        multiply => result = Some(a * b),
+        divide => result = Some(a / b),
+    };
 
-    Ok(Json(json!({ "result": result })))
+    if Some(result) != None {
+        Ok(Json(json!({ "result": Some(result) })))
+    } else {
+        Err(StatusCode::BAD_REQUEST)
+    }
 }
