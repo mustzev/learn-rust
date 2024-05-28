@@ -8,5 +8,5 @@ use axum::{
 pub fn make_test_router() -> Router {
     Router::new()
         .route("/", get(hello_world))
-        .route("/calculate", post(calculate))
+        .route("/calculate/:operation", post(calculate))
 }
