@@ -20,14 +20,15 @@ pub async fn calculate(
 
     let mut result: Option<f64> = None;
 
-    match operation {
-        add => result = Some(a + b),
-        subtract => result = Some(a - b),
-        multiply => result = Some(a * b),
-        divide => result = Some(a / b),
+    match operation.as_str() {
+        "add" => result = Some(a + b),
+        "subtract" => result = Some(a - b),
+        "multiply" => result = Some(a * b),
+        "divide" => result = Some(a / b),
+        _ => {}
     };
 
-    if Some(result) != None {
+    if result != None {
         Ok(Json(json!({ "result": Some(result) })))
     } else {
         Err(StatusCode::BAD_REQUEST)

@@ -2,6 +2,7 @@ use crate::routes::router::make_router;
 use axum::serve;
 use tokio::net::TcpListener;
 mod routes;
+mod utilities;
 
 #[tokio::main]
 async fn main() {
