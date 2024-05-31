@@ -11,5 +11,7 @@ fn main() {
 
     // try_lifetime::nested::try_lifetime();
 
-    try_smart_pointers::pointer::make_rc_cons();
+    // try_smart_pointers::pointer::make_rc_cons();
+
+    try_smart_pointers::interior_mutability::make_interior_mutability()
 }
