@@ -72,7 +72,7 @@ pub fn make_drop() {
     println!("CustomSmartPointers created.");
 }
 
-enum RcList {
+pub enum RcList {
     RcCons(i32, Rc<RcList>),
     RcNil,
 }

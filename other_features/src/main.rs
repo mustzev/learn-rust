@@ -1,5 +1,6 @@
 mod paas_core;
 mod rest_api;
+mod try_concurrency;
 mod try_lifetime;
 mod try_smart_pointers;
 mod try_trait;
@@ -13,5 +14,9 @@ fn main() {
 
     // try_smart_pointers::pointer::make_rc_cons();
 
-    try_smart_pointers::interior_mutability::make_interior_mutability()
+    // try_smart_pointers::interior_mutability::make_interior_mutability();
+
+    // try_smart_pointers::reference_cycle::make_reference_cycle();
+
+    try_concurrency::threads::make_threads();
 }
