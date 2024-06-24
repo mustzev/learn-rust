@@ -18,5 +18,11 @@ fn main() {
 
     // try_smart_pointers::reference_cycle::make_reference_cycle();
 
-    try_concurrency::threads::make_threads();
+    // try_concurrency::threads::make_threads();
+
+    // try_concurrency::threads::pass_message_between_threads();
+
+    // try_concurrency::mutex::make_use_of_mutex();
+
+    try_concurrency::mutex::make_use_of_mutex_1();
 }
