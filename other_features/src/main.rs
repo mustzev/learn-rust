@@ -2,6 +2,7 @@ mod paas_core;
 mod rest_api;
 mod try_concurrency;
 mod try_lifetime;
+mod try_oop_features;
 mod try_smart_pointers;
 mod try_trait;
 
