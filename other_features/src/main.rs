@@ -3,6 +3,7 @@ mod rest_api;
 mod try_concurrency;
 mod try_lifetime;
 mod try_oop_features;
+mod try_patterns_and_matching;
 mod try_smart_pointers;
 mod try_trait;
 
@@ -25,5 +26,7 @@ fn main() {
 
     // try_concurrency::mutex::make_use_of_mutex();
 
-    try_concurrency::mutex::make_use_of_mutex_1();
+    // try_concurrency::mutex::make_use_of_mutex_1();
+
+    try_patterns_and_matching::refutability::make_destructuring_nested_structs_and_enums();
 }
