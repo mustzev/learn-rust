@@ -28,5 +28,5 @@ fn main() {
 
     // try_concurrency::mutex::make_use_of_mutex_1();
 
-    try_patterns_and_matching::refutability::make_destructuring_nested_structs_and_enums();
+    try_patterns_and_matching::refutability::make_at_operator_match();
 }
