@@ -14,5 +14,9 @@ fn main() {
 
     // advanced_traits::advanced_traits::make_human_fly();
 
-    advanced_traits::advanced_traits::name_baby_animal();
+    // advanced_traits::advanced_traits::name_baby_animal();
+
+    // advanced_traits::advanced_traits::try_outline_print();
+
+    advanced_traits::advanced_traits::try_newtype_pattern();
 }
