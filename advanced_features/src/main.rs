@@ -1,4 +1,5 @@
 mod advanced_traits;
+mod advanced_types;
 mod unsafe_rust;
 
 fn main() {
@@ -18,5 +19,9 @@ fn main() {
 
     // advanced_traits::advanced_traits::try_outline_print();
 
-    advanced_traits::advanced_traits::try_newtype_pattern();
+    // advanced_traits::advanced_traits::try_newtype_pattern();
+
+    // advanced_types::advanced_types::try_type_alias();
+
+    advanced_types::advanced_types::try_type_alias1();
 }
