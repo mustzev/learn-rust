@@ -1,5 +1,7 @@
+mod advanced_functions;
 mod advanced_traits;
 mod advanced_types;
+mod macros;
 mod unsafe_rust;
 
 fn main() {
@@ -23,5 +25,11 @@ fn main() {
 
     // advanced_types::advanced_types::try_type_alias();
 
-    advanced_types::advanced_types::try_type_alias1();
+    // advanced_types::advanced_types::try_type_alias1();
+
+    // advanced_functions::advanced_functions::try_function_pointers();
+
+    // advanced_functions::advanced_functions::try_return_closure();
+
+    macros::macros::try_macro();
 }

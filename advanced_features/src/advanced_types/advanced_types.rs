@@ -33,5 +33,3 @@ pub trait Write {
     fn write_all(&mut self, buf: &[u8]) -> Result<()>;
     fn write_fmt(&mut self, fmt: fmt::Arguments) -> Result<()>;
 }
-
-pub fn try_never_type() -> ! {}
