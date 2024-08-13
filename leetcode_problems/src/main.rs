@@ -1,8 +1,16 @@
 fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-    println!("{target}");
-    vec![0, 1]
+    for i in 0..nums.len() {
+        for j in 0..nums.len() {
+            if i != j {
+                if (nums[i] + nums[j]) == target {
+                    return vec![i.try_into().unwrap(), j.try_into().unwrap()];
+                }
+            }
+        }
+    }
+    return vec![-1, -1];
 }
 
 fn main() {
-    two_sum(vec![2, 7, 11, 15], 9);
+    two_sum(vec![3, 2, 4], 6);
 }
