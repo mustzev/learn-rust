@@ -1,1 +1,1 @@
-# learning-rust
+# learn-rust
